@@ -4,17 +4,17 @@ import "github.com/01-edu/z01"
 
 func Raid1b(x, y int) {
 	if y == 1 {
-		printTop(x)
+		printTopB(x)
 	} else {
-		printTop(x)
+		printTopB(x)
 		for i := 0; i < y-2; i++ {
-			printMid(x)
+			printMidB(x)
 		}
-		printBot(x)
+		printBotB(x)
 	}
 }
 
-func printTop(x int) {
+func printTopB(x int) {
 	if x == 1 {
 		z01.PrintRune('/')
 		z01.PrintRune('\n')
@@ -28,7 +28,7 @@ func printTop(x int) {
 		z01.PrintRune('\n')
 	}
 }
-func printMid(x int) {
+func printMidB(x int) {
 	if x == 1 {
 		z01.PrintRune('*')
 		z01.PrintRune('\n')
@@ -42,7 +42,7 @@ func printMid(x int) {
 		z01.PrintRune('\n')
 	}
 }
-func printBot(x int) {
+func printBotB(x int) {
 	if x == 1 {
 		z01.PrintRune(92)
 		z01.PrintRune('\n')
