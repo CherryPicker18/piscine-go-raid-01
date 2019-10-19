@@ -2,12 +2,12 @@ package student
 
 import "github.com/01-edu/z01"
 
-func Raid1c(x,y int) {
+func Raid1c(x, y int) {
 	if y == 1 {
 		printTop(x)
 	} else {
 		printTop(x)
-		for i := 0 ; i < y - 2 ; i++ {
+		for i := 0; i < y-2; i++ {
 			printMid(x)
 		}
 		printBot(x)
@@ -19,9 +19,9 @@ func printTop(x int) {
 		z01.PrintRune('A')
 		z01.PrintRune('\n')
 	} else {
-	
+
 		z01.PrintRune('A')
-		for j := 0 ; j < x - 2 ; j++ {
+		for j := 0; j < x-2; j++ {
 			z01.PrintRune('B')
 		}
 		z01.PrintRune('A')
@@ -33,9 +33,9 @@ func printMid(x int) {
 		z01.PrintRune('B')
 		z01.PrintRune('\n')
 	} else {
-	
+
 		z01.PrintRune('B')
-		for j := 0 ; j < x - 2 ; j++ {
+		for j := 0; j < x-2; j++ {
 			z01.PrintRune(' ')
 		}
 		z01.PrintRune('B')
@@ -47,9 +47,9 @@ func printBot(x int) {
 		z01.PrintRune('C')
 		z01.PrintRune('\n')
 	} else {
-	
+
 		z01.PrintRune('C')
-		for j := 0 ; j < x - 2 ; j++ {
+		for j := 0; j < x-2; j++ {
 			z01.PrintRune('B')
 		}
 		z01.PrintRune('C')
