@@ -3,6 +3,9 @@ package student
 import "github.com/01-edu/z01"
 
 func Raid1c(x, y int) {
+	if x <= 0 || y <= 0 {
+		return
+	}
 	if y == 1 {
 		printTopC(x)
 	} else {
